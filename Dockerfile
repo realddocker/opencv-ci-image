@@ -5,6 +5,7 @@ MAINTAINER Mark Sheehan
 
 run     apt-get update
 
+# Clang has been added to perform scan-build code checks
 RUN apt-get update && \
         apt-get install -y \
         build-essential \
@@ -22,7 +23,8 @@ RUN apt-get update && \
         libtiff-dev \
         libjasper-dev \
         libavformat-dev \
-        libpq-dev
+        libpq-dev \
+        clang
 
 run     apt-get install -y -q libavformat-dev libavcodec-dev libavfilter-dev libswscale-dev
 run     apt-get install -y -q libjpeg-dev libpng-dev libtiff-dev libjasper-dev zlib1g-dev libopenexr-dev libeigen3-dev libtbb-dev
