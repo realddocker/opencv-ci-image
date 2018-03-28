@@ -25,7 +25,8 @@ RUN apt-get update && \
         libavformat-dev \
         libpq-dev \
         clang \
-        cppcheck
+        cppcheck \
+        ssh
 
 run     apt-get install -y -q libavformat-dev libavcodec-dev libavfilter-dev libswscale-dev
 run     apt-get install -y -q libjpeg-dev libpng-dev libtiff-dev libjasper-dev zlib1g-dev libopenexr-dev libeigen3-dev libtbb-dev
